@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/912/96/56/cosmos-espacio-naturaleza-nebulosas-wallpaper-preview.jpg);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+}
