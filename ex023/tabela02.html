@@ -9,6 +9,11 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            background-color: darkgray;
+            padding: 10px;
+        }
+
         table {
             
             text-align: center;
@@ -21,6 +26,10 @@
             color: white;
             background-color: gray;
             border-collapse: collapse;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: gray;
         }
         tr {
             padding: 10px;
@@ -36,12 +45,17 @@
             text-align: right;
         }
 
+        tfoot {
+            background-color: gray;
+        }
+
    </style>
 </head>
 <body>
     <!--
     ANATOMIA TABELAS GRANDES
     table
+        caption
         thead
             tr, td, th (assim como nos demais)
         tbody
@@ -49,10 +63,11 @@
     -->
     <h1>Tabelas Extensas com semântica</h1>
     <table>
+        <caption>População</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col">POPULAÇÃO</th>
             </tr>
 
         </thead>
@@ -100,9 +115,9 @@
 
         </tbody>
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total</th>
             <td>00000
-                
+
             </td>
 
         </tfoot>
