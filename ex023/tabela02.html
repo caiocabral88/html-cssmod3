@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de tabela 02</title>
+   <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            
+            text-align: center;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            
+            color: white;
+            background-color: gray;
+            border-collapse: collapse;
+        }
+        tr {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid black; 
+            
+        }
+        #pop {
+            text-align: right;
+        }
+
+   </style>
+</head>
+<body>
+    <!--
+    ANATOMIA TABELAS GRANDES
+    table
+        thead
+            tr, td, th (assim como nos demais)
+        tbody
+        tfoot
+    -->
+    <h1>Tabelas Extensas com semântica</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ESTADO</th>
+                <th>POPULAÇÃO</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td id="pop">45 873 194</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td id="pop">21 322 691</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td id="pop">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td id="pop">14 850 513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td id="pop">11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td id="pop">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td id="pop">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td id="pop">9 223 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td id="pop">8 664 306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td id="pop">8 058 441</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th>Total</th>
+            <td>00000
+                
+            </td>
+
+        </tfoot>
+    </table>
+
+
+
+</body>
+</html>
