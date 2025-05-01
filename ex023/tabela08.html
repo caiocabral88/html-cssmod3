@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando com Colgroup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            
+        }
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.cprof {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>M</td>
+            <td>31</td>
+            <td>Pedreiro</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>F</td>
+            <td>33</td>
+            <td>Caminhoneira</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
