@@ -23,6 +23,9 @@
         th {
             border: 1px solid black;
         }
+        th {
+            padding: 10px;
+        }
 
         td {
             border: 1px solid black;
@@ -41,13 +44,13 @@
     <table>
         <thead>
             <tr>
-                <th>GRUPO</th>
-                <th>NOMES</th>
-                <th colspan="4">FILMES</th>
+                <th scope="col">GRUPO</th>
+                <th scope="col">NOMES</th>
+                <th colspan="4" scope="colgroup">FILMES</th>
             </tr>
         </thead>
         <tr>
-            <td rowspan="3" id="genero">MULHERES</td>
+            <th rowspan="3" id="genero" scope="rowgroup">MULHERES</th>
             <td>ANA MARIA</td>
             <td>ALIEN</td>
             <td>RAMBO</td>
@@ -71,7 +74,7 @@
             
         </tr>
         <tr>
-            <td rowspan="3" id="genero">HOMENS</td>
+            <th rowspan="3" id="genero" scope="rowgroup">HOMENS</th>
             <td>BRUNO MENDONÇA</td>
             <td>INTOCAVEIS</td>
             <td>AMNÉSIA</td>
@@ -94,6 +97,13 @@
             <td>TOY STORY</td>
             
         </tr>
+
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>10000</td>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
